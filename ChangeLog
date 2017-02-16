@@ -7,7 +7,6 @@ To email a contributor remove "DELETE" from the email address.
  * src/url.c			  Add header point
  * src/url.h			  Add header point
 
-
 2016/11/02 Jeffrey Fulmer http://www.joedog.org/support/
  * src/load.c             Fixed a bug in content-type selection
  * src/util.c             Formatting enhancements

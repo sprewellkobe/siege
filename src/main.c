@@ -430,6 +430,8 @@ private LINES* __k_setup()
 
 void display_headers(LINES* lines)
 {
+ if(lines==NULL)
+    return;
  int i=0;
  for(;i<lines->index;i++)
      printf("[%s]\n",lines->line[i]);
@@ -455,7 +457,7 @@ int main(int argc, char *argv[])
   __config_setup(argc, argv);
   lines = __urls_setup();
   headers = __k_setup();
-  display_headers(headers);
+  //display_headers(headers);
 
   pthread_attr_init(&scope_attr);
   pthread_attr_setscope(&scope_attr, PTHREAD_SCOPE_SYSTEM);
